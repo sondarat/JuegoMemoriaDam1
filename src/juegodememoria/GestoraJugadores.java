@@ -7,6 +7,7 @@ package juegodememoria;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
+import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FileWriter;
@@ -22,7 +23,8 @@ import java.util.logging.Logger;
  */
 public class GestoraJugadores extends TreeMap<String, Jugador> {
 
-    private String FILENAME_JUGADORES = "archivos/Jugadores.dat";
+    private String FILENAME_JUGADORES = "/archivos/Jugadores.dat";
+   
 
     public Jugador agregarJugador(String nombre) {
         Jugador Manfredo = new Jugador(nombre, 0);
@@ -84,4 +86,5 @@ public class GestoraJugadores extends TreeMap<String, Jugador> {
         }
         return null;
     }
+    
 }
